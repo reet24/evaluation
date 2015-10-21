@@ -19,6 +19,15 @@ scanf("%d",&num);
 printf("\nEnter Registration Number- ");
 scanf("%d",&reg);
 }
+int displaydata()
+{
+  printf("\nPersonal Details entered are:-\n");
+  printf("\nName:- %s %s:- ",fname,lname);
+  printf("\nAdreess is:- %s",add);
+  printf("\nCourse Name %s :- ",course);
+  printf("\nPhone number is:- %d",num);
+  printf("\nregistration Number :- %d:- ",reg);
+}
 }
 void main()
 {
@@ -26,5 +35,6 @@ clrscr();
 printf("***Personal Details***\n");
 pd obj=new pd();
 obj.inputdata();
+obj.displaydata();
 getch();
 }
